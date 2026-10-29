@@ -2,7 +2,7 @@ const targetDate = new Date("2026-11-12T00:00:00-06:00");
 
 const INVITATION_CONFIG = {
   whatsappNumber: "50259242192",
-  sheetsEndpoint: "", // Pegar aquí la URL /exec de Google Apps Script
+  sheetsEndpoint: "https://script.google.com/macros/s/AKfycbxya6yqtYLCGAGyolXDFkpWjRfO7eiiv52Szpogkm6TkU5UMybF_MkbQGSwtvK12yFjLQ/exec",
   responseDeadline: "2026-11-08",
   responseDeadlineLabel: "8 de noviembre de 2026",
 };
