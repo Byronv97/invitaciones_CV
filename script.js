@@ -1,4 +1,4 @@
-const targetDate = new Date("2026-11-12T00:00:00-06:00");
+const targetDate = new Date("2026-11-12T19:00:00-06:00");
 
 const INVITATION_CONFIG = {
   whatsappNumber: "50259242192",

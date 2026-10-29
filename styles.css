@@ -557,6 +557,22 @@ h1 em {
   font-weight: 500;
 }
 
+.event-time {
+  margin: 14px 0 0;
+  color: var(--muted-cream);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.event-time span {
+  margin-right: 6px;
+  color: var(--gold-light);
+  font-family: var(--serif);
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
 .footer-divider {
   align-self: stretch;
   background: var(--line);
@@ -601,6 +617,77 @@ h1 em {
   color: var(--gold);
   font-size: 19px;
   font-style: normal;
+}
+
+.location-section {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.9fr) minmax(230px, 1.35fr) auto;
+  align-items: center;
+  gap: 25px;
+  margin-top: 24px;
+  padding: 23px 0 2px;
+  border-top: 1px solid var(--line);
+}
+
+.location-section h2 {
+  margin: 0;
+  color: var(--cream);
+  font-family: var(--serif);
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+.location-section h2 em {
+  color: var(--gold-light);
+  font-weight: 500;
+}
+
+.location-address {
+  display: grid;
+  gap: 4px;
+  color: var(--muted-cream);
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.45;
+}
+
+.location-address strong {
+  margin-bottom: 2px;
+  color: var(--gold);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.map-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 42px;
+  padding: 0 17px;
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.map-button span {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 0;
+}
+
+.map-button:hover,
+.map-button:focus-visible {
+  color: var(--navy-950);
+  background: var(--gold-light);
 }
 
 .rsvp-section {
@@ -981,6 +1068,15 @@ h1 em {
   .rsvp-section {
     grid-template-columns: 1fr;
     gap: 17px;
+  }
+
+  .location-section {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .map-button {
+    width: 100%;
   }
 
   .rsvp-actions {
