@@ -107,6 +107,59 @@
             </div>
           </div>
         </footer>
+
+        <section class="rsvp-section" aria-labelledby="rsvp-title">
+          <div class="rsvp-copy">
+            <p class="micro-label">Confirmación de asistencia</p>
+            <h2 id="rsvp-title">¿Nos acompañas?</h2>
+            <p class="rsvp-description">
+              Será un gusto compartir este momento contigo. Elige la forma que prefieras para
+              confirmar.
+            </p>
+            <p class="rsvp-deadline" id="rsvp-deadline" hidden>
+              Confirma antes del <strong id="rsvp-deadline-label"></strong>.
+            </p>
+          </div>
+
+          <div class="rsvp-actions">
+            <a
+              class="rsvp-button rsvp-button-whatsapp"
+              id="whatsapp-confirm"
+              href="#"
+              target="_blank"
+              rel="noopener"
+              hidden
+            >
+              Confirmar por WhatsApp <span>↗</span>
+            </a>
+            <button class="rsvp-button rsvp-button-sheet" type="button" id="sheet-toggle">
+              Registrar asistencia <span>+</span>
+            </button>
+          </div>
+
+          <form class="rsvp-form" id="rsvp-form" hidden>
+            <p class="rsvp-recipient">Invitación para <strong id="form-guest-name">Familia y amigos</strong></p>
+            <div class="rsvp-form-grid">
+              <label>
+                ¿Asistirás?
+                <select id="rsvp-attendance" required>
+                  <option value="Sí">Sí, asistiré</option>
+                  <option value="No">No podré asistir</option>
+                </select>
+              </label>
+              <label>
+                Número de asistentes
+                <input id="rsvp-attendees" type="number" min="1" value="1" required />
+              </label>
+            </div>
+            <label>
+              Comentarios <span class="optional-label">(opcional)</span>
+              <textarea id="rsvp-comments" rows="2" placeholder="Escribe un comentario"></textarea>
+            </label>
+            <button class="rsvp-submit" type="submit">Enviar confirmación <span>↗</span></button>
+            <p class="rsvp-status" id="rsvp-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
       </article>
 
       <div class="utility-row">
