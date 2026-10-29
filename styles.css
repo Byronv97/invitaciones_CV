@@ -893,6 +893,7 @@ h1 em {
 }
 
 .print-button {
+  display: none;
   padding: 0;
   border: 0;
   color: var(--gold-light);
