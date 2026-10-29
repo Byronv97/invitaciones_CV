@@ -249,10 +249,9 @@ h1 em {
 }
 
 .guest-note {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-  max-width: 350px;
+  display: grid;
+  gap: 6px;
+  max-width: 520px;
   margin-bottom: 27px;
   padding: 10px 0 10px 14px;
   border-left: 1px solid rgba(243, 217, 137, 0.55);
@@ -260,21 +259,18 @@ h1 em {
 }
 
 .guest-note .micro-label {
-  flex: 0 0 auto;
   margin-bottom: 0;
   font-size: 10px;
 }
 
 .guest-note p:last-child {
-  overflow: hidden;
   margin-bottom: 0;
   color: var(--cream);
   font-family: var(--serif);
   font-size: clamp(1.35rem, 3vw, 2rem);
   font-style: italic;
   line-height: 1.05;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 
 .graduate-lockup {
