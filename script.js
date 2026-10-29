@@ -56,7 +56,6 @@ const sheetToggle = document.querySelector("#sheet-toggle");
 const rsvpForm = document.querySelector("#rsvp-form");
 const attendanceField = document.querySelector("#rsvp-attendance");
 const attendeesField = document.querySelector("#rsvp-attendees");
-const commentsField = document.querySelector("#rsvp-comments");
 const rsvpStatus = document.querySelector("#rsvp-status");
 const deadline = document.querySelector("#rsvp-deadline");
 const deadlineLabel = document.querySelector("#rsvp-deadline-label");
@@ -128,7 +127,6 @@ rsvpForm.addEventListener("submit", async (event) => {
     confirmacion: attendanceField.value,
     asistentes: isAttending ? Number(attendeesField.value) || 1 : 0,
     metodo: "Formulario web",
-    comentarios: commentsField.value.trim(),
   };
 
   submitButton.disabled = true;
