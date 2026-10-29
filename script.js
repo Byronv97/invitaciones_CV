@@ -1,10 +1,10 @@
 const targetDate = new Date("2026-11-12T00:00:00-06:00");
 
 const INVITATION_CONFIG = {
-  whatsappNumber: "", // Ejemplo: "50255555555"
-  sheetsEndpoint: "", // URL /exec de Google Apps Script
-  responseDeadline: "", // Ejemplo: "2026-10-31"
-  responseDeadlineLabel: "", // Ejemplo: "31 de octubre de 2026"
+  whatsappNumber: "50259242192",
+  sheetsEndpoint: "", // Pegar aquí la URL /exec de Google Apps Script
+  responseDeadline: "2026-11-08",
+  responseDeadlineLabel: "8 de noviembre de 2026",
 };
 
 const query = new URLSearchParams(window.location.search);
