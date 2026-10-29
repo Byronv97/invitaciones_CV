@@ -1,10 +1,15 @@
 const targetDate = new Date("2026-11-12T00:00:00-06:00");
 
-const guestName = new URLSearchParams(window.location.search).get("invitado");
+const query = new URLSearchParams(window.location.search);
+const guestName = query.get("invitado");
+const includesFamily = ["1", "true", "si", "sí"].includes(
+  query.get("familia")?.trim().toLowerCase(),
+);
 const guestNameElement = document.querySelector("#guest-name");
 
 if (guestName?.trim()) {
-  guestNameElement.textContent = guestName.trim();
+  const formattedName = guestName.trim();
+  guestNameElement.textContent = includesFamily ? `${formattedName} y familia` : formattedName;
 }
 
 const countdownElements = {
