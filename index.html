@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Invitación a la graduación de Cristian Wilfredo Ventura Sac, 12 de noviembre de 2026."
+    />
+    <title>Graduación 2026 | Cristian Wilfredo Ventura Sac</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <article class="invitation-card" aria-labelledby="invitation-title">
+        <div class="grain" aria-hidden="true"></div>
+        <div class="card-glow card-glow-one" aria-hidden="true"></div>
+        <div class="card-glow card-glow-two" aria-hidden="true"></div>
+
+        <header class="topbar">
+          <a class="monogram" href="#invitation-title" aria-label="Volver al inicio">
+            <span class="monogram-mark">CV</span>
+            <span class="monogram-copy">Una nueva etapa<strong>2026</strong></span>
+          </a>
+          <p class="topbar-note">Invitación especial <span>///</span> 01</p>
+        </header>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> Ceremonia de graduación</p>
+            <h1 id="invitation-title">El futuro<br /><em>comienza</em><br />aquí.</h1>
+            <p class="intro">
+              Hay momentos que merecen celebrarse en compañía. Hoy abrimos la puerta a una
+              nueva historia llena de posibilidades.
+            </p>
+
+            <div class="guest-note" aria-live="polite">
+              <p class="micro-label">Invitación para</p>
+              <p id="guest-name">Familia y amigos</p>
+            </div>
+
+            <div class="graduate-lockup">
+              <p class="micro-label">Celebramos a</p>
+              <h2>Cristian Wilfredo<br />Ventura Sac</h2>
+              <div class="gold-rule" aria-hidden="true"></div>
+              <p class="class-note">Generación <strong>2026</strong></p>
+            </div>
+          </section>
+
+          <aside class="hero-art" aria-label="Escudo institucional y símbolo de graduación">
+            <div class="orbit orbit-large" aria-hidden="true"></div>
+            <div class="orbit orbit-small" aria-hidden="true"></div>
+            <span class="art-coordinate coordinate-top" aria-hidden="true">14°38'N</span>
+            <span class="art-coordinate coordinate-bottom" aria-hidden="true">90°30'W</span>
+
+            <div class="seal-frame">
+              <div class="seal-label">Raíces &amp; futuro</div>
+              <div class="seal-image-wrap">
+                <img
+                  id="institution-seal"
+                  src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original"
+                  alt="Escudo institucional"
+                />
+                <div class="seal-fallback" aria-hidden="true">CV</div>
+              </div>
+              <div class="seal-caption">Con orgullo, dedicación<br />y visión de futuro</div>
+            </div>
+
+            <div class="cap-emblem" aria-hidden="true">
+              <span class="cap-diamond"></span>
+              <span class="cap-crown"></span>
+              <span class="cap-tassel"></span>
+            </div>
+          </aside>
+        </div>
+
+        <footer class="event-footer">
+          <div class="date-block">
+            <p class="micro-label">Reserva la fecha</p>
+            <div class="date-line">
+              <span class="date-number">12</span>
+              <span class="date-word">noviembre<br /><strong>2026</strong></span>
+            </div>
+          </div>
+
+          <div class="footer-divider" aria-hidden="true"></div>
+
+          <div class="celebration-copy">
+            <p class="micro-label">Un logro para compartir</p>
+            <p>Tu presencia hará aún más especial este día.</p>
+          </div>
+
+          <div class="countdown-block" aria-live="polite">
+            <p class="micro-label">Faltan</p>
+            <div class="countdown" id="countdown">
+              <span><strong id="days">--</strong><small>días</small></span>
+              <i>:</i>
+              <span><strong id="hours">--</strong><small>horas</small></span>
+              <i>:</i>
+              <span><strong id="minutes">--</strong><small>min</small></span>
+            </div>
+          </div>
+        </footer>
+      </article>
+
+      <div class="utility-row">
+        <p>Una invitación para recordar el camino recorrido.</p>
+        <button class="print-button" type="button" id="print-invitation">Imprimir invitación <span>↗</span></button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
