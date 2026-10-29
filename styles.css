@@ -170,8 +170,7 @@ a {
 
 .topbar-note,
 .micro-label,
-.eyebrow,
-.art-coordinate {
+.eyebrow {
   margin: 0;
   color: var(--gold-light);
   font-size: 10px;
@@ -489,25 +488,6 @@ h1 em {
   border-radius: 50%;
   content: "";
   background: var(--gold);
-}
-
-.art-coordinate {
-  position: absolute;
-  z-index: 2;
-  color: rgba(243, 217, 137, 0.72);
-  font-size: 8px;
-  writing-mode: vertical-rl;
-}
-
-.coordinate-top {
-  top: 19%;
-  right: 3%;
-}
-
-.coordinate-bottom {
-  bottom: 17%;
-  left: 3%;
-  transform: rotate(180deg);
 }
 
 .event-footer {
@@ -1026,14 +1006,6 @@ h1 em {
     min-width: 224px;
     height: 297px;
     min-height: 297px;
-  }
-
-  .coordinate-top {
-    right: 4%;
-  }
-
-  .coordinate-bottom {
-    left: 4%;
   }
 
   .event-footer {
